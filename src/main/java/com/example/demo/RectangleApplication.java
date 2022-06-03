@@ -3,10 +3,6 @@ package com.example.demo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 @SpringBootApplication
 public class RectangleApplication {
@@ -14,7 +10,7 @@ public class RectangleApplication {
 
 
 	public static void main(String[] args) {
-		//SpringApplication.run(RectangleApplication.class, args);
+		SpringApplication.run(RectangleApplication.class, args);
 	}
 
 }
