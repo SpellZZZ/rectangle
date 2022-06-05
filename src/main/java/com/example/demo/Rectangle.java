@@ -14,12 +14,20 @@ class Rectangle{
     private int height;
 
     public Rectangle() {
-
     }
 
     public Rectangle(int w, int h) {
         this.height = h;
         this.width = w;
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "id=" + id +
+                ", width=" + width +
+                ", height=" + height +
+                '}';
     }
 
     public long getId() {

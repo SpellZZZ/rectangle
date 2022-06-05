@@ -14,12 +14,10 @@ public class RectangleGui  extends VerticalLayout {
 
     private RectangleRepo rectangleRepo;
 
-    //private TextField  textFieldHeight;
-    //private TextField  textFieldWidth;
     private TextField textFieldHeight;
     private TextField textFieldWidth;
-
     private Button button;
+
 
     @Autowired
     public RectangleGui(RectangleRepo rectangleRepo) {
@@ -41,6 +39,13 @@ public class RectangleGui  extends VerticalLayout {
         rectangle.setHeight(Integer.parseInt(textFieldHeight.getValue()));
         rectangle.setWidth(Integer.parseInt(textFieldWidth.getValue()));
         rectangleRepo.save(rectangle);
+    }
+
+
+
+
+    public void actionPerformed() {
+        System.out.println("xd");
     }
 
 
